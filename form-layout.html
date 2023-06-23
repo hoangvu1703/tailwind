@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="switch.css">
     <title>Form Layout</title>
 </head>
 <body>
-    <div class="main flex">
-        <div class="menu-side-bar flex flex-col w-[17%] bg-gradient-to-b from-gray-900 to-gray-800 pl-5 gap-[24px] ">
+    <div class="main-container flex">
+        <div class="menu-side-bar flex flex-col w-[17%] bg-gradient-to-b from-gray-900 to-gray-800 pl-5 gap-[24px] h-[100vh] fixed overflow-auto">
             <div class="user-name flex gap-[10px] text-white items-center pt-6">
                 <div>
                     <div class="bg-[#3C50E0] rounded-md">
@@ -84,7 +85,7 @@
                             </svg>
                         </div>
                         <div class="flex flex-col gap-[10px]">
-                            <div class="flex gap-[20px] items-center justify-between">
+                            <div class="flex gap-[50px] items-center justify-between">
                                 <a href="#" class="text-[#8A99AF] hover:text-[#8A99AF]">List</a>
                                 <p class="bg-[#3C50E0] rounded-md px-2.5 text-[12px]">Pro</p>
                             </div>
@@ -95,7 +96,7 @@
                         </div>
                     </div>
                 </div>   
-                <div class="form flex gap-[10px]">
+                <div class="form-element flex gap-[10px]">
                     <div>
                         <svg style="width: 20px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -183,7 +184,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                           </svg>
                     </div>
-                    <div class="flex gap-[20px] items-center justify-between">
+                    <div class="flex gap-[56px] items-center justify-between">
                         <a href="#">Massages</a>
                         <p class="bg-[#3C50E0] rounded-md px-2.5 text-[12px]">5</p>
                     </div>
@@ -194,7 +195,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3" />
                           </svg>
                     </div>
-                    <div class="flex gap-[20px] items-center justify-between">
+                    <div class="flex gap-[78px] items-center justify-between">
                         <a href="#">Inbox</a>
                         <p class="bg-[#3C50E0] rounded-md px-2.5 text-[12px]">Pro</p>
                     </div>
@@ -205,7 +206,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                           </svg>
                     </div>
-                    <div class="flex gap-[20px] items-center justify-between">
+                    <div class="flex gap-[67px] items-center justify-between">
                         <a href="#">Invoice</a>
                         <p class="bg-[#3C50E0] rounded-md px-2.5 text-[12px]">Pro</p>
                     </div>
@@ -337,7 +338,7 @@
                 </div>
             </div>
         </div>
-        <div class="form w-[83%]">
+        <div class="form w-[100%] ml-[17%]">
             <div class="search h-20 flex items-center justify-between ">
                 <div class="type-search flex gap-[10px] px-[35px] py-[17px]">
                     <div class=>
@@ -386,40 +387,40 @@
                 </div>
             </div>
             <div class="layout bg-[#F1F5F9] h-max pt-[55px]">
-                <div class="flex justify-around gap-[53%] pb-[25px]">
+                <div class="flex justify-around gap-[59%] pb-[25px]">
                     <p class="text-[26px] font-bold leading-[30px]">Form Layout</p>
                     <p class="text-[#64748B]">Dashboard / <span class="text-[#3C50E0]">Form Layout</span></p>
                 </div>
                 <div class="inform flex justify-evenly">
-                    <div class="contact-form border-2 flex flex-col bg-white rounded-md">
+                    <div class="contact-form border flex flex-col bg-white rounded h-fit">
                         <div class="px-[26px]">
                             <p class="font-semibold py-[15px]">Contact Form</p>
                         </div>
                         <div class="flex flex-col gap-[26px]">
-                            <div class="border"></div>
+                            <div class="w-full bg-[#E2E8F0] h-[1px]"></div>
                             <div class="px-[26px] flex flex-col gap-[18px]">
-                                <div class="flex gap-[18px]">
+                                <div class="flex gap-[24px]">
                                     <div class="name flex flex-col gap-[12px]">
-                                        <p>Fisrt name</p>
-                                        <input class="border-2 py-2 pl-2 pr-7 w-[260px] rounded-md " type="text" placeholder="Enter your fisrt name">
+                                        <p class="text-[14px]">Fisrt name</p>
+                                        <input class="border py-[13px] pl-[22px] w-[257px] h-[50px] rounded " type="text" placeholder="Enter your fisrt name">
                                     </div>
                                     <div class="flex flex-col gap-[12px]">
-                                        <p>Last name</p>
-                                        <input class="border-2 py-2 pl-2 pr-7 w-[260px] rounded-md" type="text" placeholder="Enter your fisrt name">
+                                        <p class="text-[14px]">Last name</p>
+                                        <input class="border py-[13px] pl-[22px] w-[257px] h-[50px] rounded" type="text" placeholder="Enter your fisrt name">
                                     </div>
                                 </div>
                                 <div class="email flex flex-col gap-[12px]">
-                                    <p>Email <span class="text-red-600">*</span></p>
-                                    <input class="border-2 py-2 pl-2 pr-7 w-[538px] rounded-md " type="email" placeholder="Enter your email address">
+                                    <p class="text-[14px]">Email <span class="text-red-600">*</span></p>
+                                    <input class="border py-[13px] pl-[22px] w-[538px] h-[50px] rounded " type="email" placeholder="Enter your email address">
                                 </div>
                                 <div class="select-subject flex flex-col gap-[12px]">
-                                    <p>Subject</p>
-                                    <input class="border-2 py-2 pl-2 pr-7 w-[538px] rounded-md " type="text" placeholder="Select subject">
+                                    <p class="text-[14px]">Subject</p>
+                                    <input class="border py-[13px] pl-[22px] w-[538px] h-[50px] rounded " type="text" placeholder="Select subject">
                                 </div>
                                 <div class="type-subject flex flex-col gap-[12px] ">
-                                    <p>Subject</p>
+                                    <p class="text-[14px]">Subject</p>
                                     <div class="flex relative">
-                                        <input class="border-2 py-2 pl-2 pr-7 w-[538px] rounded-md " type="text" placeholder="Type your subject" >
+                                        <input class="border py-[13px] pl-[22px] w-[538px] h-[50px] rounded " type="text" placeholder="Type your subject" >
                                         <span class="absolute left-[93%] top-[21%]">
                                             <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -428,11 +429,11 @@
                                     </div>
                                 </div>
                                 <div class="type-mes flex flex-col gap-[12px]">
-                                    <p>Message</p>
-                                    <textarea class="border-2 py-2 pl-2 pr-7 w-[538px] h-[224px] rounded-md" placeholder="Type your message"></textarea>
+                                    <p class="text-[14px]">Message</p>
+                                    <textarea class="border py-[13px] pl-[22px] w-[538px] h-[190px] rounded" placeholder="Type your message"></textarea>
                                 </div>
                                 <div class="">
-                                    <button class="w-[538px] h-[50px] bg-[#3C50E0] text-white mb-[26px] mt-[12px] rounded-sm" >Send Message</button>
+                                    <button class="w-[538px] h-[50px] bg-[#3C50E0] text-white mb-[26px] mt-[6px] rounded" >Send Message</button>
                                 </div>
                             </div>
                         </div>
@@ -443,15 +444,15 @@
                                 <p class="font-semibold py-[15px] px-[26px]">Sign In Form</p>
                             </div>
                             <div class="flex flex-col gap-[26px]">
-                                <div class="border"></div>
+                                <div class="w-full bg-[#E2E8F0] h-[1px]"></div>
                                 <div class="px-[26px] flex flex-col gap-[18px]">
                                     <div class="sign-in-email flex flex-col gap-[12px]">
-                                        <p>Email</p>
-                                        <input class="border-2 py-2 pl-2 pr-7 w-[538px] rounded-sm " type="email" placeholder="Enter your email address">
+                                        <p class="text-[14px]">Email</p>
+                                        <input class="border py-[13px] pl-[22px] w-[538px] h-[50px] rounded " type="email" placeholder="Enter your email address">
                                     </div>
                                     <div class="password flex flex-col gap-[12px]">
-                                        <p>Password</p>
-                                        <input class="border-2 py-2 pl-2 pr-7 w-[538px] rounded-sm" type="password" placeholder="Enter password">
+                                        <p class="text-[14px]">Password</p>
+                                        <input class="border py-[13px] pl-[22px] w-[538px] h-[50px] rounded" type="password" placeholder="Enter password">
                                     </div>
                                     <div class="check flex justify-between">
                                         <div class="flex gap-[8px]">
@@ -461,37 +462,37 @@
                                         <a href="#" class="text-[14px] hover:text-[#3C50E0]">Forget password?</a>
                                     </div>
                                     <div>
-                                        <button class="w-[538px] h-[50px] bg-[#3C50E0] text-white mb-[26px] rounded-sm">Sign in</button>
+                                        <button class="w-[538px] h-[50px] bg-[#3C50E0] text-white mb-[26px] mt-[4px] rounded">Sign in</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="sign-up-form bg-white">
                             <div>
-                                <p class="py-[15px] px-[26px]">Sign Up Form</p>
+                                <p class="font-semibold py-[15px] px-[26px]">Sign Up Form</p>
                             </div>
-                            <div class="flex flex-col gap-[26px]">
-                                <div class="border"></div>
-                                <div class="px-[26px]">
-                                    <div class="sign-up-name">
-                                        <p>Name</p>
-                                        <input class="border-2 py-2 pl-2 pr-7 w-[538px] rounded-sm " type="text" placeholder="Enter your full name">
+                            <div class="flex flex-col gap-[42px]">
+                                <div class="w-full bg-[#E2E8F0] h-[1px]"></div>
+                                <div class="px-[26px] flex flex-col gap-[18px]">
+                                    <div class="sign-up-name flex flex-col gap-[12px]">
+                                        <p class="text-[14px]">Name</p>
+                                        <input class="border py-[13px] pl-[22px] w-[538px] h-[50px] rounded " type="text" placeholder="Enter your full name">
                                     </div>
-                                    <div class="sign-up-email">
-                                        <p>Email</p>
-                                        <input class="border-2 py-2 pl-2 pr-7 w-[538px] rounded-sm" type="password" placeholder="Enter your email address">
+                                    <div class="sign-up-email flex flex-col gap-[12px]">
+                                        <p class="text-[14px]">Email</p>
+                                        <input class="border py-[13px] pl-[22px] w-[538px] h-[50px] rounded" type="password" placeholder="Enter your email address">
                                     </div>
-                                    <div class="sign-up-password">
-                                        <p>Password</p>
-                                        <input class="border-2 py-2 pl-2 pr-7 w-[538px] rounded-sm " type="email" placeholder="Enter password">
+                                    <div class="sign-up-password flex flex-col gap-[12px]">
+                                        <p class="text-[14px]">Password</p>
+                                        <input class="border py-[13px] pl-[22px] w-[538px] h-[50px] rounded " type="email" placeholder="Enter password">
                                     </div>
-                                    <div class="sign-up-r">
-                                        <p>Re-enter Password</p>
-                                        <input class="border-2 py-2 pl-2 pr-7 rounded-sm w-[538px]" type="password" placeholder="Re-enter password">
+                                    <div class="sign-up-r flex flex-col gap-[12px]  ">
+                                        <p class="text-[14px]">Re-enter Password</p>
+                                        <input class="border py-[13px] pl-[22px] w-[538px] h-[50px] rounded " type="password" placeholder="Re-enter password">
                                     </div>
                                 </div>
-                                <div>
-                                    <button class="w-[538px] h-[50px] bg-[#3C50E0] text-white mb-[26px] rounded-sm">Sign up</button>
+                                <div class="px-[26px]">
+                                    <button class="w-[538px] h-[50px] bg-[#3C50E0] text-white mb-[26px] rounded">Sign up</button>
                                 </div>
                             </div>
                         </div>
