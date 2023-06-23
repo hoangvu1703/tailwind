@@ -1,0 +1,29 @@
+
+.menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+}
+.dropdown {
+    display: none;
+    padding-left: 20px;
+}
+.menu li:hover .dropdown {
+    display: block;
+}
+.pro {
+    position: absolute;
+    top: 0;
+    right: -30px;
+    background-color: #3C50E0;
+    color: #fff;
+    padding: 2px 4px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.arrow {
+    padding-left: 20px;
+    font-size: 10px;
+}
+  
